@@ -1,5 +1,4 @@
 function solve(s){
-  let split = s.split('')
   
   //create uppes/lower arrays
   let uppers = s.match(/[A-Z]/g);
