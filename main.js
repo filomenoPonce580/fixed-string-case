@@ -13,15 +13,10 @@ function solve(s){
     lowers = [];
   }
   
-  //if one is longer than the other. map accordingly
+  //recomment
   if(uppers.length > lowers.length){
-    split.join('').toUpperCase
-  }else if(lowers.length > uppers.length){
-    split.map((x,i,a)=>{
-      x.toLowerCase()
-    }).join()
+    return s.toUpperCase()
+  }else{
+    return s.toLowerCase()
   }
-  
-  //join and return
-  return split
 }
