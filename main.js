@@ -1,21 +1,12 @@
 function solve(s){
-  
-  //create uppes/lower arrays
+  //create variables for upper/lowercase. match to create array
   let uppers = s.match(/[A-Z]/g);
   let lowers = s.match(/[a-z]/g);
 
-  
-  //check for null, set to empty
-  if (uppers === null){
-    uppers = [];
-  }else if(lowers === null){
-    lowers = [];
-  }
-  
-  //recomment
-  if(uppers.length > lowers.length){
-    return s.toUpperCase()
-  }else{
+  //if statements
+  if(uppers === null || uppers.length <= lowers.length){
     return s.toLowerCase()
+  }else{
+    return s.toUpperCase()    
   }
 }
